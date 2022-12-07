@@ -22,7 +22,7 @@ class CatFactory extends Factory
             'lifespan' => $this->faker->sentence,
             'avg_weight_female' =>rand(9,20),
             'avg_weight_male' =>rand(15,25),
-            'coat_type' =>$this->faker->randomElement(['non','short','medium','long']),
+            'coat_type' =>$this->faker->randomElement(['none','short','medium','long']),
             'coat_density' =>$this->faker->randomElement(['low','medium','high'])
         ];
     }
