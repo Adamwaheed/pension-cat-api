@@ -20,9 +20,10 @@ return new class extends Migration
             $table->string('lifespan');
             $table->float('avg_weight_female');
             $table->float('avg_weight_male');
-            $table->enum('coat_type',['non','short','medium','long'])->default('medium');
+            $table->enum('coat_type',['none','short','medium','long'])->default('medium');
             $table->enum('coat_density',['low','medium','high'])->default('medium');
             $table->timestamps();
+            $table->softDeletes();
         });
     }
 
